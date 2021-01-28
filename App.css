@@ -1,0 +1,105 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.submitBtn {
+  top: 25px;
+}
+.countryform {
+  margin-top: 33px;
+  position: inherit;
+  justify-content: center;
+}
+.inputText {
+  margin-top: 25px;
+}
+.divmargin {
+  margin-top: 40px;
+}
+.divmargin label {
+  margin-bottom: 10px;
+}
+.imageFlag {
+  width: 30px;
+  height: 30px;
+  bottom: 252px;
+  position: absolute;
+  right: 580px;
+}
+.orLbl {
+  top: 190px;
+  position: absolute;
+  left: 655px;
+  font-weight: bold;
+}
+.linkCnty {
+  top: 185px;
+  position: absolute;
+  right: 475px;
+  border: 1px solid #31409f;
+  border-radius: 5px;
+  height: 32px;
+  width: 119px;
+  color: #fff;
+  background: #31409f;
+  text-decoration: blink;
+  line-height: 27px;
+}
+.marginBtn {
+  margin-right: 90px;
+}
+.submitBtn{
+  margin-right: 65px ;
+    margin-top: 3px;
+}
+.countryDtls{
+  top: 45px;
+  position: relative;
+  justify-content: center;
+}
+.countty_lbl label{
+  top: 70px;
+  position: relative;
+  margin-bottom: 10px;
+}
+.imageweather{
+  width: 30px;
+  height: 30px;
+  bottom: -5px;
+  position: absolute;
+  right: 534px;
+}

@@ -22,24 +22,16 @@ class countryDetails extends Component {
     api
       .getWeatherData()
       .then((response) => {
+        debugger;
         var data = response.data;
-        if (data.length > 0) {
-          this.setState({
-            temperature: data.current.temperature,
-            weather_icons: data.weather_icons[0],
-            wind_speed: data.current.wind_speed,
-            precip: data.current.precip,
-            showData: true,
-          });
-        } else {
-          this.setState({
-            temperature: "",
-            weather_icons: "",
-            wind_speed: "",
-            precip: "",
-            showData: true,
-          });
-        }
+
+        this.setState({
+          temperature: data.current.temperature,
+          weather_icons: data.current.weather_icons[0],
+          wind_speed: data.current.wind_speed,
+          precip: data.current.precip,
+          showData: true,
+        });
       })
       .catch((e) => {
         console.log(e);
@@ -59,7 +51,7 @@ class countryDetails extends Component {
         {this.state.showData && (
           <div className="countty_lbl">
             <InputLabel>
-              <b>Temperature :-</b> <p>{this.state.temperature}</p>
+              <b>Temperature :-</b>  {this.state.temperature} 
             </InputLabel>
             <InputLabel>
               <b>Weather_icons :-</b>
@@ -67,15 +59,15 @@ class countryDetails extends Component {
                 <img
                   src={this.state.weather_icons}
                   alt="weather_icons"
-                  className="imageFlag"
+                  className="imageweather"
                 />
               </p>
             </InputLabel>
             <InputLabel>
-              <b>Wind_speed :-</b> <p>{this.state.wind_speed}</p>
+              <b>Wind_speed :-</b>  {this.state.wind_speed}  
             </InputLabel>
             <InputLabel>
-              <b>Precip :-</b> <p>{this.state.precip}</p>
+              <b>Precip :-</b>  {this.state.precip} 
             </InputLabel>
           </div>
         )}
