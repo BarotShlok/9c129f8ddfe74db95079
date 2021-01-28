@@ -22,7 +22,6 @@ class countryDetails extends Component {
     api
       .getWeatherData()
       .then((response) => {
-        debugger;
         var data = response.data;
 
         this.setState({
